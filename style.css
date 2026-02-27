@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+th {
+    background: #ddd;
+}
+
+button {
+    padding: 6px 12px;
+    margin-top: 10px;
+}
+
+#gantt {
+    display: flex;
+    margin-top: 20px;
+}
+
+.block {
+    background: lightblue;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 2px;
+}
