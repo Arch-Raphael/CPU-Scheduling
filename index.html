@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPU Scheduling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CPU Scheduling Simulator</h1>
+
+<h3>Add Process</h3>
+PID: <input id="pid">
+Arrival: <input id="at" type="number">
+Burst: <input id="bt" type="number">
+Priority: <input id="pr" type="number">
+<button onclick="addProcess()">Add</button>
+
+<h3>Select Algorithm</h3>
+<select id="algo">
+    <option value="fcfs">FCFS</option>
+    <option value="sjf">SJF</option>
+    <option value="priority">Priority</option>
+</select>
+
+<br><br>
+<button onclick="simulate()">Simulate</button>
+
+<h3>Process Table</h3>
+<table id="ptable">
+<tr>
+<th>PID</th><th>AT</th><th>BT</th><th>PR</th>
+</tr>
+</table>
+
+<h3>Result</h3>
+<table id="result">
+<tr>
+<th>PID</th>
+<th>Waiting Time</th>
+<th>Turnaround Time</th>
+</tr>
+</table>
+
+<h3 id="avg"></h3>
+
+<h3>Gantt Chart</h3>
+<div id="gantt"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
